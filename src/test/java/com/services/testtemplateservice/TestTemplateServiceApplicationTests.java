@@ -1,10 +1,10 @@
-package com.offshoringhub.testtemplateserver;
+package com.services.testtemplateservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestTemplateServerApplicationTests {
+class TestTemplateServiceApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,1 +1,16 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/TestTemplateDB?createDatabaseIfNotExist=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  application:
+    name: TEST-TEMPLATE-SERVICE
 
+  config:
+    import: optional:configserver:http://localhost:9296/
